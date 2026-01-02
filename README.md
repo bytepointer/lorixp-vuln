@@ -1,8 +1,8 @@
-# lorixp-vuln
-
 # IMPORTANTE
 
 - Este repositório foi criado com o objetivo de conscientizar desenvolvedores sobre falhas XSS e documentar o bug que será enviado para à equipe de desenvolvimento da Loritta.
+
+# lorixp-vuln
 
 # Tipo de vulnerabilidade
 
