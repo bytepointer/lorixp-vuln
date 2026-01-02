@@ -19,9 +19,9 @@
 
 - Em qualquer configurador de embed, é possível enviar uma url de título, ao qual aparecerá como um botão com href na página. Através disso, é possível enviar um href malicioso como `javascript:alert("xss")` que ocasionará executamento de script na página ao clicar no botão.
 
-# A vulnerabilidade pode ser mais explorada
+# Exploração da vulnerabilidade
 
-- Antigamente, era possíveel obter cargos em qualquer servidor ao qual a vítima tinha poder administrativo, já que com uma falha xss era possível enviar solicitações para o dashboard de um servidor no mesmo cluster. Apesar dos servidores estarem separados em clusters, era possível você criar servidores e adicionar a Loritta até atingir o cluster do servidor alvo.
+- Antigamente, era possível obter cargos em qualquer servidor ao qual a vítima tinha poder administrativo, já que com uma falha xss era possível enviar solicitações para o dashboard de um servidor no mesmo cluster. Apesar dos servidores estarem separados em clusters, era possível você criar servidores e adicionar a Loritta até atingir o cluster do servidor alvo.
 
 - Atualmente, a vulnerabilidade foi fortalecida caso a vítima tenha permissões de `Manage Roles` e `Manage Messages` através da criação de uma chave API da Loritta e a utilização do Giveaway Roles.
 
