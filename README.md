@@ -32,7 +32,7 @@
 # Como pode se tornar indetectável para leigos
 
 - Encriptografando o código;
-- Colocando uma mensagem bobinha escrita `javascript:"LORI_ERROR";func()`;
+- Colocando uma mensagem bobinha na frente da função (ex. `javascript:"LORI_ERROR"...`);
 - Pessoas leigas podem ser enganadas, fazendo elas clicarem no botão por "curiosidade", dependendo da leigacidade e "labia" do atacante.
 
 # Credits
