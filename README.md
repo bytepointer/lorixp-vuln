@@ -1,5 +1,9 @@
 # lorixp-vuln
 
+# IMPORTANTE
+
+- Este repositório foi criado com o objetivo de conscientizar desenvolvedores sobre falhas XSS e documentar o bug que será enviado para à equipe de desenvolvimento da Loritta.
+
 # Tipo de vulnerabilidade
 
 - A vulnerabilidade é um stored XSS (Cross Site Scripting), muito comum em aplicações Web, ao qual permite a fuga de html no innerContent ou em alguma entrada de script do html, como no caso de `href`. O XSS pode ser utilizado para o envio de requisições utilizando os cookies de sessão do usuário.
@@ -27,12 +31,12 @@
 
 # Como evitar falhas XSS?
 
-- Sanitizar entradas de inputs e outputs (ex: saídas através de <select> obtendo dados de um servidor), verificando se está sendo armazenado algum código HTML no servidor.
+- Sanitizar entradas de inputs e outputs (ex: saídas através de `<select>` obtendo dados de um servidor), verificando se está sendo armazenado algum código HTML no servidor.
 
-# Como pode se tornar indetectável para leigos
+# Como invasores poderiam se aproveitar de pessoas leigas
 
 - Encriptografando o código;
-- Colocando uma mensagem bobinha na frente da função
+- Colocando uma mensagem bobinha na frente da função (ex. `javascript:"LORI_ERROR"...`);
 - Pessoas leigas podem ser enganadas, fazendo elas clicarem no botão por "curiosidade", dependendo da leigacidade e "labia" do atacante.
 
 # Credits
