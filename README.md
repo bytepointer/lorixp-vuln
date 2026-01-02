@@ -4,7 +4,7 @@
 
 # Tipo de vulnerabilidade
 
-- A vulnerabilidade é um stored XSS (Cross Site Scripting), muito comum em aplicações Web, ao qual permite a fuga de html no innerContent ou em alguma entrada de script do html, como no caso de `href`. O XSS pode ser utilizado para o envio de requisições utilizando os cookies de sessão do usuário.
+- A vulnerabilidade é um XSS stored (Cross Site Scripting Stored), muito comum em aplicações Web, ao qual permite a injeção de scripts através do innerHtml ou em alguma entrada de script do html, como no caso de `href`. O XSS pode ser utilizado para o envio de requisições utilizando os cookies de sessão do usuário.
 
 # Como a vulnerabilidade funciona?
 
@@ -15,7 +15,7 @@
 
 * 01/01/2026 Working Vulnerability
 
-- Em qualquer configurador de embed, é possível enviar uma url de título, ao qual aparecerá como um botão com href na página. Através disso, é possível enviar um href malicioso como `javascript:alert("xss")` que ocasionará executamento de script na página ao clicar no botão.
+- Em qualquer configurador de embed, é possível enviar uma url de título, ao qual aparecerá como um botão com href na página. Através disso, é possível enviar um href malicioso como `javascript:alert("xss")` que ocasionará execução de script na página ao clicar no botão.
 
 # Exploração da vulnerabilidade
 
@@ -31,11 +31,11 @@
 
 - Sanitizar entradas de inputs e outputs (ex: saídas através de `<select>` obtendo dados de um servidor), verificando se está sendo armazenado algum código HTML no servidor.
 
-# Como invasores poderiam se aproveitar de pessoas leigas
+# Fatores que aumentam as chances do clique do usuário
 
-- Encriptografando o código;
+- Ofuscação de código;
 - Colocando uma mensagem bobinha na frente da função (ex. `javascript:"LORI_ERROR"...`);
-- Pessoas leigas podem ser enganadas, fazendo elas clicarem no botão por "curiosidade", dependendo da leigacidade e "labia" do atacante.
+- Atacantes podem utilizar engenharia social para fazer usuários clicarem no href por curiosidade.
 
 # POC
 
