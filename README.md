@@ -2,8 +2,6 @@
 
 - Este repositório foi criado com o objetivo de conscientizar desenvolvedores sobre falhas XSS e documentar o bug que será enviado para à equipe de desenvolvimento da Loritta.
 
-# lorixp-vuln
-
 # Tipo de vulnerabilidade
 
 - A vulnerabilidade é um stored XSS (Cross Site Scripting), muito comum em aplicações Web, ao qual permite a fuga de html no innerContent ou em alguma entrada de script do html, como no caso de `href`. O XSS pode ser utilizado para o envio de requisições utilizando os cookies de sessão do usuário.
