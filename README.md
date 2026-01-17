@@ -37,10 +37,10 @@
 - Colocando uma mensagem bobinha na frente da função (ex. `javascript:"LORI_ERROR"...`);
 - Atacantes podem utilizar engenharia social para fazer usuários clicarem no href por curiosidade.
 
-# POC
+## POC
 
 https://youtu.be/113ddcnBnfM
 
-# Credits
+## Credits
 
 bytepointer
